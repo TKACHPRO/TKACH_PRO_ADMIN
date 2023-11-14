@@ -4,7 +4,7 @@ import compressImgFile from "@/utils/compressImgFile";
 import { v4 as uuidv4 } from "uuid";
 
 const uploadToFirebase = async (imgFiles, path) => {
-  const storage = getStorage(firebaseApp, `gs://testproject-91c17.appspot.com/`);
+  const storage = getStorage(firebaseApp, `gs://tkachpro.appspot.com/`);
   const compressedFiles = await compressImgFile(imgFiles);
 
   const dataToUpload = compressedFiles.map((compressedFile) => {
