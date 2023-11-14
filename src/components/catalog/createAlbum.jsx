@@ -5,7 +5,7 @@ import createCatalogAlbum from "@/api/createCatalogAlbum";
 import updateCatalogSectionAlbums from "@/api/updateCatalogSectionAlbums";
 import { CatalogSectionAlbumsContext } from "@/servises/context";
 
-const CreateAlbum = ({ id, albumIds }) => {
+const CreateAlbum = ({ id, albumIds, sectionId }) => {
   const [albums, setAlbums] = useContext(CatalogSectionAlbumsContext);
   const [inputTitleText, setInputTitleText] = useState("");
   const [imgFiles, setImgFiles] = useState([]);
@@ -33,7 +33,7 @@ const CreateAlbum = ({ id, albumIds }) => {
   return (
     <div className="flex max-w-s p-2 mx-auto flex-col items-center h-fit justify-between mb-20 rounded-md border">
       <b>Create Album</b>{" "}
-      <label htmlFor="gallery-create-title">
+      <label htmlFor={sectionId}>
         {" "}
         New Title:
         <input

@@ -14,7 +14,7 @@ const CatalogSectionAlbums = ({ id, albumIds, sectionId }) => {
 
   return (
     <div className="max-w-s mt-10 mx-auto">
-      <CreateAlbum id={id} albumIds={albumIds} />
+      <CreateAlbum id={id} albumIds={albumIds} sectionId={sectionId} />
 
       {sectionAlbums?.map((album) => {
         const [id, title, logo, images] = [
