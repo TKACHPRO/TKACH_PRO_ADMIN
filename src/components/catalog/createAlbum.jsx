@@ -37,7 +37,7 @@ const CreateAlbum = ({ id, albumIds, sectionId }) => {
         {" "}
         New Title:
         <input
-          id="gallery-create-title"
+          id={sectionId}
           type="text"
           className="ml-2 text-dark mt-2"
           value={inputTitleText}
