@@ -6,11 +6,6 @@ import { GalleryContext } from "@/servises/context";
 import Parse from "@/servises/parse";
 import PageLink from "@/components/pageLink";
 
-export const metadata = {
-  title: "Dashboard gallery",
-  description: "TkachPro admin dashboard gallery",
-};
-
 const getGallery = async () => {
   const gallery = new Parse.Query("gallery");
   try {
