@@ -6,6 +6,11 @@ import CatalogTable from "@/components/catalog/catalogTable";
 import CreateSection from "@/components/catalog/createSection";
 import PageLink from "@/components/pageLink";
 
+export const metadata = {
+  title: "Dashboard catalog",
+  description: "TkachPro admin dashboard catalog",
+};
+
 const getCatalogSections = async () => {
   const catalogSections = new Parse.Query("catalogSection");
   try {
